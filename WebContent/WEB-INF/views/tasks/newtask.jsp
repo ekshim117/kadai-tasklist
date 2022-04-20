@@ -5,7 +5,7 @@
         <h2>タスク新規作成ページ</h2>
 
 
-        <form method="POST" action= "${pageContext.request.contextPath }/create">
+        <form method="POST" action= "${pageContext.request.contextPath }/createtask">
             <c:import url="_formtask.jsp" />
         </form>
 
