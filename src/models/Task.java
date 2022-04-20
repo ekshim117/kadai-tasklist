@@ -32,7 +32,7 @@ public class Task {
     private Timestamp created_at;
 
     @Column(name = "updated_at", nullable = false)
-    private Timestamp upedated_at;
+    private Timestamp updated_at;
 
     public Integer getId() {
         return id;
@@ -58,12 +58,12 @@ public class Task {
         this.created_at = created_at;
     }
 
-    public Timestamp getUpedated_at() {
-        return upedated_at;
+    public Timestamp getUpdated_at() {
+        return updated_at;
     }
 
-    public void setUpedated_at(Timestamp upedated_at) {
-        this.upedated_at = upedated_at;
+    public void setUpdated_at(Timestamp updated_at) {
+        this.updated_at = updated_at;
     }
 
 
