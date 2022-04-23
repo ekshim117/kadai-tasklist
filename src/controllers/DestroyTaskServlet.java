@@ -35,8 +35,8 @@ public class DestroyTaskServlet extends HttpServlet {
         if(_token != null && _token.equals(request.getSession().getId())) {
             EntityManager em = DBUtil.createEntityManager();
 
-            //セッションスコープっからメッセージのIDを取得して
-            //該当のIDのメッセージ１件のみをデータベースから取得
+            //セッションスコープからタスクのIDを取得して
+            //該当のIDのタスク１件のみをデータベースから取得
             Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
           //データベースを更新
@@ -48,7 +48,7 @@ public class DestroyTaskServlet extends HttpServlet {
             //セッションスコープ上の不要になったデータを削除
             request.getSession().removeAttribute("task_id");
 
-            //indexページへリダイレクト
+            //indextaskページへリダイレクト
             response.sendRedirect(request.getContextPath() + "/indextask");
         }
     }

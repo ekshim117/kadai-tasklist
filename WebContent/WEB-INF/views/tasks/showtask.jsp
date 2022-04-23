@@ -9,7 +9,7 @@
         <h2>id : ${task.id}のタスク詳細ページ</h2>
 
         <table>
-           <p>メッセージ：<c:out value="${task.content}" /></p>
+           <p>タスク：<c:out value="${task.content}" /></p>
         <p>作成日時：<fmt:formatDate value="${task.created_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
         <p>更新日時：<fmt:formatDate value="${task.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
         </table>
